@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Bucket List 🪣</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="stars" aria-hidden="true"></div>
+
+  <main class="container">
+    <header>
+      <div class="badge">before i'm gone</div>
+      <h1>My Bucket List</h1>
+      <p class="subtitle">Dream it. Do it. Cross it off.</p>
+    </header>
+
+    <!-- Stats bar -->
+    <div class="stats">
+      <div class="stat">
+        <span id="total-count">0</span>
+        <label>dreams</label>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span id="done-count">0</span>
+        <label>achieved</label>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span id="percent">0%</span>
+        <label>complete</label>
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-track" aria-label="Completion progress">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- Input area -->
+    <div class="input-area">
+      <input
+        type="text"
+        id="item-input"
+        placeholder="e.g. See the Northern Lights…"
+        maxlength="100"
+        autocomplete="off"
+      />
+      <button id="add-btn">Add</button>
+    </div>
+    <p class="input-hint" id="input-hint"></p>
+
+    <!-- Category filter -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">To Do</button>
+      <button class="filter-btn" data-filter="done">Done ✓</button>
+    </div>
+
+    <!-- List -->
+    <ul class="bucket-list" id="bucket-list" aria-live="polite"></ul>
+
+    <!-- Empty state -->
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">🌍</div>
+      <p>Your bucket list is empty.</p>
+      <small>Add your first dream above!</small>
+    </div>
+
+    <!-- Clear all -->
+    <div class="actions">
+      <button id="clear-done-btn" class="secondary-btn">Clear Completed</button>
+      <button id="clear-all-btn" class="danger-btn">Clear All</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
