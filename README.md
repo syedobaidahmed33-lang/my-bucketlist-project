@@ -90,12 +90,12 @@ This project demonstrates:
 
 ## 🔗 GitHub Repository
 
-[Paste your GitHub link here]
+https://github.com/syedobaidahmed33-lang/my-bucketlist-project
 
 ---
 
 ## ✨ Author
 
-**[Your Name Here]**
+SYED OBAID
 
 ---
